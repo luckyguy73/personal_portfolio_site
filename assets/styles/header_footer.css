@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+html, body {
+    height: 100%;
+    font-family: 'Noticia Text', serif;
+    color: white;
+}
+
+p.grow {
+    display: flex;
+    justify-content: flex-end;
+}
+
+p.grow a:hover {
+    color: orange;
+}
+
+h1 a {
+    cursor: alias;
+}
+
+h1 a:active {
+    transform: scale(0.7);
+}
+
+a {
+    transition: .1s;
+    margin-left: 25px;
+}
+
+/* unvisited link, visited link */
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    text-decoration: none;
+    transform: scale(1.3);
+}
+
+/* selected link */
+a:active {
+    color: white;
+    text-decoration: none;
+    transform: scale(1.6);
+}
+
+
+a span {
+    display: inline-block;
+}
+
+a span {
+    transition: .6s;
+}
+
+a:hover span {
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+}
+
+/*sticky footer*/
+.page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -145px;
+}
+
+.page-wrap:after {
+    content: "";
+    display: block;
+}
+
+.site-footer, .page-wrap:after {
+    height: 145px;
+}
+
+.site-footer {
+    background: orange;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+footer img {
+    height: 32px;
+    width: 32px;
+}

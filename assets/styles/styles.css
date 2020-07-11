@@ -1,0 +1,86 @@
+
+body {
+    background: linear-gradient(to bottom, rgba(117, 114, 113, 0.8) 10%, rgba(40, 49, 77, 0.8) 30%, rgba(29, 35, 71, 0.8) 50%, rgba(19, 25, 28, 0.8) 80%, rgba(15, 14, 14, .8) 100%), url("../images/snow.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.item-1 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: row2-start;
+    grid-row-end: 2;
+    position: relative;
+    left: 25px;
+}
+
+.item-2 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: row2-start;
+    grid-row-end: 3;
+}
+
+.item-3 {
+    grid-column-start: 2;
+    grid-column-end: span 3;
+    grid-row-start: row3-start;
+    grid-row-end: 4;
+}
+
+.about {
+    transform: rotate(350deg);
+}
+
+.bio {
+    background-color: #03a9f4;
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 35px;
+}
+
+.dodgers img {
+    border: 3px solid white;
+    width: 200%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    section {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    .item-1 {
+        position: static;
+    }
+
+    .item-2 {
+        width: 25%;
+        margin: auto;
+    }
+
+    .item-3 {
+        margin-top: 10px;
+    }
+
+    .about img {
+        margin-top: 100px;
+        margin-left: 50px;
+    }
+
+    h1 {
+        font-size: 3.5em;
+        margin-left: 30px;
+    }
+
+}
