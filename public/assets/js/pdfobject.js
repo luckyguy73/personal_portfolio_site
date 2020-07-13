@@ -289,8 +289,8 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col">
-                    <h2>This browser does not support inline PDFs. Please download the PDF to view it:<br>
-                     <a href='[url]'>Download PDF</a></h2>
+                    <h2>This browser does not support inline PDFs. Please download the Resume to view it:<br>
+                     <a href='[url]'>Download Resume in PDF</a></h2>
                     </div>
                 </div>
             </div>
@@ -317,11 +317,15 @@
             if (fallbackLink) {
 
                 fallbackHTML = (typeof fallbackLink === "string") ? fallbackLink : fallbackHTML_default;
-                targetNode.innerHTML = fallbackHTML.replace(/\[url\]/g, url);
+                targetNode.innerHTML = fallbackHTML.replace(/\[url]/g, url);
 
             }
 
             return embedError("This browser does not support embedded PDFs");
+        }
+
+        if (isIOS) {
+            return displayFallback();
         }
 
         // If the forcePDFJS option is invoked, skip everything else and embed as directed
