@@ -285,7 +285,16 @@
             targetNode = getTargetElement(targetSelector),
             fallbackHTML = "",
             pdfOpenFragment = "",
-            fallbackHTML_default = "<p>This browser does not support inline PDFs. Please download the PDF to view it: <a href='[url]'>Download PDF</a></p>";
+            fallbackHTML_default = `
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col">
+                    <p>This browser does not support inline PDFs. Please download the PDF to view it:<br>
+                     <a href='[url]'>Download PDF</a></p>
+                    </div>
+                </div>
+            </div>
+            `;
 
         //If target element is specified but is not valid, exit without doing anything
         if (!targetNode) {
