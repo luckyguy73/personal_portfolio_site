@@ -77,8 +77,16 @@
     </footer>
 
     <script src="assets/js/index.js"></script>
-    <script src="assets/js/contact.js"></script>
 <!--    hide accessToken while developing since you only get set amount of api calls per day-->
     <script src="assets/js/map.js"></script>
+
+    <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+    <script src="/__/firebase/7.16.0/firebase-app.js"></script>
+    <script src="/__/firebase/7.16.0/firebase-auth.js"></script>
+    <script src="/__/firebase/7.16.0/firebase-firestore.js"></script>
+    <script src="/__/firebase/7.16.0/firebase-storage.js"></script>
+    <script src="/__/firebase/init.js"></script>
+    <script src="assets/js/contact.js"></script>
+
 </body>
 </html>
