@@ -289,8 +289,8 @@
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col">
-                    <p>This browser does not support inline PDFs. Please download the PDF to view it:<br>
-                     <a href='[url]'>Download PDF</a></p>
+                    <h2>This browser does not support inline PDFs. Please download the PDF to view it:<br>
+                     <a href='[url]'>Download PDF</a></h2>
                     </div>
                 </div>
             </div>
