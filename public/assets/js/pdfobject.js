@@ -303,7 +303,19 @@
 
         //Do the dance
 
-        //If the forcePDFJS option is invoked, skip everything else and embed as directed
+        function displayFallback() {
+            //Display the fallback link if available
+            if (fallbackLink) {
+
+                fallbackHTML = (typeof fallbackLink === "string") ? fallbackLink : fallbackHTML_default;
+                targetNode.innerHTML = fallbackHTML.replace(/\[url\]/g, url);
+
+            }
+
+            return embedError("This browser does not support embedded PDFs");
+        }
+
+        // If the forcePDFJS option is invoked, skip everything else and embed as directed
         if (forcePDFJS && PDFJS_URL) {
 
             return generatePDFJSiframe(targetNode, url, pdfOpenFragment, PDFJS_URL, id);
@@ -313,7 +325,9 @@
 
             // Safari will not honour redirect responses on embed src.
             if (supportRedirect && isSafariOsx) {
-                return generateIframeElement(targetNode, targetSelector, url, pdfOpenFragment, width, height, id);
+                // Safari on iPad was displaying this funky so commented out, rather download it then ugly display
+                // return generateIframeElement(targetNode, targetSelector, url, pdfOpenFragment, width, height, id);
+                return displayFallback();
             }
 
             return generateEmbedElement(targetNode, targetSelector, url, pdfOpenFragment, width, height, id);
@@ -325,15 +339,7 @@
 
         } else {
 
-            //Display the fallback link if available
-            if (fallbackLink) {
-
-                fallbackHTML = (typeof fallbackLink === "string") ? fallbackLink : fallbackHTML_default;
-                targetNode.innerHTML = fallbackHTML.replace(/\[url\]/g, url);
-
-            }
-
-            return embedError("This browser does not support embedded PDFs");
+            return displayFallback();
 
         }
 
