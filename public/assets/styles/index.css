@@ -52,6 +52,63 @@ section {
     width: 200%;
 }
 
+/*Projects Section*/
+
+.carousel {
+    margin-top: 50px;
+}
+
+.carousel-inner {
+    width: 825px;
+    margin: auto;
+}
+
+.carousel-thumbnails .carousel-indicators img {
+    max-width: 100px;
+    height: 50px;
+    overflow: hidden;
+    display: block;
+}
+
+.carousel-thumbnails .carousel-indicators li {
+    height: auto;
+    max-width: 100px;
+    width: 100px;
+    border: none;
+    box-shadow: 1px 3px 5px 0 rgba(0, 0, 0, 0.75);
+}
+
+.carousel-thumbnails .carousel-indicators li.active {
+    border-bottom: 4px solid #fff;
+}
+
+
+a.chev, a.chev:link, a.chev.hover, a.chev:visited,
+a.chev span, a.chev span:hover {
+    transform: none;
+}
+
+
+/*Contact Section*/
+
+#map {
+    color: black;
+}
+
+#message-div {
+    background-color: orange;
+    border-radius: 10px;
+    height: 10%;
+    padding: 6px 15px;
+}
+
+#form-div.submitted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Media Queries*/
 @media only screen and (max-width: 600px) {
 
     section {
@@ -76,6 +133,15 @@ section {
     .about img {
         margin-top: 100px;
         margin-left: 50px;
+    }
+
+    .carousel {
+        margin-top: 125px;
+    }
+
+    .carousel-inner {
+        width: 300px;
+        margin: auto;
     }
 
     h1 {
