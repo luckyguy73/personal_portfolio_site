@@ -1,49 +1,268 @@
 @import "config";
 
 body {
-  background: $primary-color;
-  color: set-text-color($primary-color);
+  background: $dark;
+  color: set-text-color($dark);
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
+
+  .nav-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    left: 2rem;
+    bottom: 2rem;
+    z-index: 100;
+
+    a {
+      color: set-text-color($dark);
+      text-decoration: none;
+      padding: .5rem;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .side-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    z-index: 100;
+
+    a {
+      color: set-text-color($dark);
+      text-decoration: none;
+      padding: .5rem;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
 }
 
 h1, h2, h3 {
   font-weight: 400;
 }
 
-a {
-  color: set-text-color($primary-color);
-  text-decoration: none;
+.openers {
+  opacity: 0;
 }
 
 .home {
   position: relative;
   width: 100vw;
   height: 100vh;
+  background-image: linear-gradient(to top, rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.7)), url('../images/watersplash.gif');
+  background-size: cover;
+}
+
+.home-wrapper {
   padding-top: 10vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("../images/watersplash.gif") center top;
-  background-size: cover;
 
   &__name {
     font-size: 5rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid set-text-color($primary-color);
+    //border-bottom: 2px solid set-text-color($primary-color);
 
     &--last {
       color: $secondary-color;
       font-weight: 700;
     }
   }
-  .nav-wrapper {
-    position: absolute;
-    bottom: 1rem;
+}
+
+.img-psalms {
+  filter: brightness(20%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+}
+
+.img-lakers {
+  filter: brightness(20%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+  opacity: 0;
+}
+
+#bio {
+  margin-top: 50vh;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.about {
+  margin: 3rem auto;
+}
+
+.dodgers {
+  margin: auto;
+  text-align: center;
+}
+
+.bio-text {
+  margin: 2rem 15%;
+  line-height: 1.5rem;
+  padding: 2rem;
+  border: 3px solid #fff;
+  overflow: auto;
+  background: #03a9f4;
+  border-radius: 10px;
+}
+
+.img-dodger {
+  border: 5px solid white;
+  border-radius: 50%;
+  max-width: 60%;
+  height: auto;
+}
+
+#projects {
+  background: rgba(34, 34, 34, 1);
+  height: 101vh;
+
+  h3 {
+    margin: auto;
   }
 }
 
+#contact {
+  margin-top: 50vh;
+  background: rgba(34, 34, 34, 1);
+  height: 101vh;
+}
+
+#map {
+  color: black;
+  width: 500px;
+  height: 400px;
+}
+
+#message-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  border-radius: 10px;
+  height: 5vh;
+  padding: 6px 15px;
+}
+
+#form-div.submitted {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 48px;
+}
+
+@media only screen and (max-width: 768px) {
+  #bio {
+  }
+
+  .about {
+    margin: 50px auto auto;
+    padding: 0;
+  }
+
+  .dodgers {
+    margin: 20px auto auto;
+    padding: 0;
+  }
+
+  .bio-text {
+    margin: 2rem;
+    padding: 20px;
+    font-size: .9rem;
+  }
+
+  body .nav-wrapper {
+    left: 0;
+    bottom: 1rem;
+  }
+
+  body .side-footer {
+    right: 0;
+    bottom: 1rem;
+  }
+
+  a .fa-2x {
+    font-size: 1em;
+    padding-top: 1rem;
+  }
+
+  #map {
+    width: 400px;
+  }
+
+  #projects, #contact {
+    height: auto;
+  }
+
+}
+
+
+//experimental
+.fade {
+  background: rgba(34, 34, 34, 1);
+}
+
+#gallery, #gallery2 {
+  img {
+    height: 33vw;
+    cursor: pointer;
+
+    @media (min-width: $bootstrap-sm) {
+      height: 35vw;
+    }
+
+    @media (min-width: $bootstrap-lg) {
+      height: 17vw;
+    }
+  }
+}
+
+  // Crop images in the carousel
+.modal-dialog {
+  max-width: 90vw;
+  .modal-content {
+    text-align: center;
+
+    .modal-header, .modal-body, .modal-footer {
+      background: rgba(84, 84, 84, 1);
+      border-color: rgba(34, 34, 34, 1);
+    }
+  }
+}
+
+// Crop images in the carousel
+.carousel-item {
+  img {
+    max-height: 40vw;
+    object-fit: cover;
+  }
+}

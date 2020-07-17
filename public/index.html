@@ -4,61 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Ian De Bie</title>
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
     <link rel="manifest" href="assets/images/site.webmanifest">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!--    <link href="assets/styles/hover.css" rel="stylesheet">-->
-    <!--    <link href="assets/styles/header_footer.css" rel="stylesheet">-->
-    <!--    <link href="assets/styles/index.css" rel="stylesheet">-->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css' rel='stylesheet'/>
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>Ian De Bie</title>
 </head>
 
 <body>
 
+<div class="nav-wrapper openers">
+    <a class="nav-scroll" href="#home" title="Home"><i class="fas fa-home fa-2x"></i></a>
+    <a class="nav-scroll" href="#bio" title="Bio"><i class="fas fa-book fa-2x"></i></a>
+    <a class="nav-scroll" href="#projects" title="Projects"><i class="fas fa-parking fa-2x"></i></a>
+    <a class="nav-scroll" href="#contact" title="Contact"><i class="fas fa-comments fa-2x"></i></a>
+</div>
 
-<section class="home">
-    <h2>Hi! My Name Is</h2>
-    <h1 class="home__name">
-        Ian <span class="home__name--last">De Bie</span>
-    </h1>
-    <h2>
-        Aspiring Software Engineer
-    </h2>
-    <div class="nav-wrapper">
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <a href="assets/images/resume.pdf" target="_blank">Resume</a>
+<section id="home" class="home">
+    <div class="home-wrapper openers">
+        <h2>Hi! My Name Is</h2>
+        <h1 class="home-wrapper__name">
+            Ian <span class="home-wrapper__name--last">De&nbsp;Bie</span>
+        </h1>
+        <hr>
+        <h2>
+            Aspiring Software Engineer
+        </h2>
     </div>
 </section>
 
-<header class="">
-    <nav class="row">
-        <div class="col"><h1 class="hvr-float-shadow"><a href="/">Ian De Bie</a></h1></div>
-        <div class="col pt-3">
-            <p class="grow">
-                <a class="hvr-underline-from-left" href="projects.html"><span>Projects</span></a>
-                <a class="hvr-underline-from-center" href="contact.html"><span>Contact</span></a>
-                <a href="assets/images/resume.pdf" class="hvr-underline-from-right" target="_blank">
-                    <span>Resume</span></a>
-            </p>
-        </div>
-    </nav>
-</header>
+<img src="assets/images/psalms.jpg" alt="parallax" class="img-psalms">
+<img src="assets/images/lakers.jpg" alt="parallax" class="img-lakers">
 
-<section>
-    <h2 style="display: none">semantics</h2>
-    <div class="about item-1">
-        <img src="assets/images/about.png" alt="about me" onmouseover="rotateYDIV()" id="rotate3D"
-             style="transform: rotateY(360deg);">
+<section id="bio">
+    <div class="about">
+        <img src="assets/images/about.png" alt="about me">
     </div>
-    <div class="dodgers item-2">
-        <img class="hvr-pulse-shrink" src="assets/images/dodgers.png" alt="me in dodgers hat">
+    <div class="dodgers">
+        <img class="img-dodger" src="assets/images/dodgers.png" alt="me in dodgers hat">
     </div>
-    <div class="bio item-3 hvr-rectangle-out">
+    <div class="bio-text">
         <p>
             My name is Ian De Bie, and I currently live in Cerritos, CA. I am a Christian, I love Jesus,
             and my favorite Bible verse is Philippians 4:13, "I can do all things through Christ who
@@ -69,137 +59,216 @@
         </p>
     </div>
 </section>
+
 <!--        Projects-->
-<!--        Carousel Wrapper-->
-<div id="projects"></div>
-<div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel"
-     data-interval="1500">
-
-    <!--            Slides-->
-    <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active">
-            <img class="d-block w-100"
-                 src="assets/images/belle-moda%20water.gif"
-                 alt="First slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100"
-                 src="assets/images/belle-moda%20snowflakes.gif"
-                 alt="Second slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100"
-                 src="assets/images/belle-moda%20rays.gif"
-                 alt="Third slide">
-        </div>
-        <div class="carousel-item">
-            <img class="d-block w-100"
-                 src="assets/images/belle-moda%20clouds.gif"
-                 alt="Fourth slide">
-        </div>
-    </div>
-    <!--            / Slides-->
-
-    <!--            Controls-->
-    <a class="carousel-control-prev chev" href="#carousel-thumb" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next chev" href="#carousel-thumb" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-    <!--            / Controls-->
-
-    <!--            Thumbnails-->
-    <ol class="carousel-indicators">
-        <li data-target="#carousel-thumb" data-slide-to="0" class="active">
-            <img class="d-block w-100 img-fluid"
-                 src="assets/images/belle-moda%20water.gif"
-                 alt="First thumbnail"></li>
-        <li data-target="#carousel-thumb" data-slide-to="1">
-            <img class="d-block w-100 img-fluid"
-                 src="assets/images/belle-moda%20snowflakes.gif"
-                 alt="Second thumbnail"></li>
-        <li data-target="#carousel-thumb" data-slide-to="2">
-            <img class="d-block w-100 img-fluid"
-                 src="assets/images/belle-moda%20rays.gif"
-                 alt="Third thumbnail"></li>
-        <li data-target="#carousel-thumb" data-slide-to="3">
-            <img class="d-block w-100 img-fluid"
-                 src="assets/images/belle-moda%20clouds.gif"
-                 alt="Fourth thumbnail"></li>
-    </ol>
-    <!--            / Thumbnails-->
-
-</div>
-<!--        / Carousel Wrapper-->
-
-<!--    Contact Section-->
-<div id="contact"></div>
-<section class="row mt-5">
-    <div id="form-div" class="col-sm-4 offset-sm-1 mr-5">
-        <form id="form-contact">
-            <div class="form-group">
-                <label for="name"></label>
-                <input type="text" class="form-control" id="name" placeholder="name">
+<section id="next-img" class="mb-5">
+    <div id="projects" class="text-center mb-5">
+        <h3 class="my-5">Some projects that I have worked on</h3>
+        <div class="row justify-content-center mt-5" id="gallery">
+            <div class="col-12 col-lg-4 my-3" data-toggle="modal" data-target="#exampleModal">
+                <img src="assets/images/belle-moda%20water.gif" data-target="#carouselExample"
+                     data-slide-to="0" alt="0">
             </div>
-            <div class="form-group">
-                <input type="email" class="form-control" id="email" placeholder="email">
-                <small id="emailHelp" class="form-text text-muted">enter contact info for a response</small>
+            <div class="col-12 col-lg-4 my-3" data-toggle="modal" data-target="#exampleModal">
+                <img src="assets/images/belle-moda%20snowflakes.gif" data-target="#carouselExample"
+                     data-slide-to="1" alt="1">
             </div>
-            <div class="form-group">
-                <textarea class="form-control" id="message" cols="30" rows="10" placeholder="message"></textarea>
+        </div>
+        <div class="row justify-content-center" id="gallery2">
+            <div class="col-12 col-lg-4 my-3" data-toggle="modal" data-target="#exampleModal">
+                <img src="assets/images/belle-moda%20clouds.gif" data-target="#carouselExample"
+                     data-slide-to="2" alt="2">
             </div>
-
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-    </div>
-
-    <div class="col-sm-3 mt-3 ml-5">
-        <div id='map' style='width: 500px; height: 400px;'></div>
+            <div class="col-12 col-lg-4 my-3" data-toggle="modal" data-target="#exampleModal">
+                <img src="assets/images/belle-moda%20rays.gif" data-target="#carouselExample"
+                     data-slide-to="3" alt="3">
+            </div>
+        </div>
     </div>
 </section>
 
 
-<footer class="site-footer">
-    <div class="info">
-        <a href="https://github.com/luckyguy73" target="_blank">
-                <span>
-                    <svg class="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16"
-                         width="32" aria-hidden="true">
-                        <path fill-rule="evenodd"
-                              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
-                    </svg>
-                </span>
-        </a>
-        <a href="https://www.linkedin.com/in/ian-de-bie-wgu/" target="_blank">
-            <span><img src="assets/images/linkedin.png" alt="linkedin repos"></span>
-        </a>
-        <a href="mailto:ian@debie.us" target="_blank"><span>ian@debie.us</span></a>
+<!-- Modal markup: https://getbootstrap.com/docs/4.4/components/modal/ -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <!-- Carousel markup: https://getbootstrap.com/docs/4.4/components/carousel/ -->
+                <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="" src="assets/images/java_appointment_project/login.jpg" alt="0">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="" src="assets/images/java_appointment_project/appointments.jpg" alt="1">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="" src="assets/images/java_appointment_project/add_appointment.jpg" alt="2">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="" src="assets/images/java_appointment_project/calendar.jpg" alt="3">
+                        </div>
+                        <div class="carousel-item">
+                            <img class=""
+                                 src="assets/images/java_appointment_project/calendar_scheduled.jpg" alt="4">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <span>Java appointment application built for school project</span>
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            </div>
+        </div>
     </div>
-</footer>
-<script src="assets/js/index.js"></script>
+</div>
+
+
+<!--&lt;!&ndash;        Carousel Wrapper&ndash;&gt;-->
+<!--<div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel"-->
+<!--     data-interval="1500">-->
+
+<!--    &lt;!&ndash;            Slides&ndash;&gt;-->
+<!--    <div class="carousel-inner" role="listbox">-->
+<!--        <div class="carousel-item active">-->
+<!--            <img class="d-block w-100"-->
+<!--                 src="assets/images/belle-moda%20water.gif"-->
+<!--                 alt="First slide">-->
+<!--        </div>-->
+<!--        <div class="carousel-item">-->
+<!--            <img class="d-block w-100"-->
+<!--                 src="assets/images/belle-moda%20snowflakes.gif"-->
+<!--                 alt="Second slide">-->
+<!--        </div>-->
+<!--        <div class="carousel-item">-->
+<!--            <img class="d-block w-100"-->
+<!--                 src="assets/images/belle-moda%20rays.gif"-->
+<!--                 alt="Third slide">-->
+<!--        </div>-->
+<!--        <div class="carousel-item">-->
+<!--            <img class="d-block w-100"-->
+<!--                 src="assets/images/belle-moda%20clouds.gif"-->
+<!--                 alt="Fourth slide">-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;            / Slides&ndash;&gt;-->
+
+<!--    &lt;!&ndash;            Controls&ndash;&gt;-->
+<!--    <a class="carousel-control-prev chev" href="#carousel-thumb" role="button" data-slide="prev">-->
+<!--        <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+<!--        <span class="sr-only">Previous</span>-->
+<!--    </a>-->
+<!--    <a class="carousel-control-next chev" href="#carousel-thumb" role="button" data-slide="next">-->
+<!--        <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+<!--        <span class="sr-only">Next</span>-->
+<!--    </a>-->
+<!--    &lt;!&ndash;            / Controls&ndash;&gt;-->
+
+<!--    &lt;!&ndash;            Thumbnails&ndash;&gt;-->
+<!--    <ol class="carousel-indicators">-->
+<!--        <li data-target="#carousel-thumb" data-slide-to="0" class="active">-->
+<!--            <img class="d-block w-100 img-fluid"-->
+<!--                 src="assets/images/belle-moda%20water.gif"-->
+<!--                 alt="First thumbnail"></li>-->
+<!--        <li data-target="#carousel-thumb" data-slide-to="1">-->
+<!--            <img class="d-block w-100 img-fluid"-->
+<!--                 src="assets/images/belle-moda%20snowflakes.gif"-->
+<!--                 alt="Second thumbnail"></li>-->
+<!--        <li data-target="#carousel-thumb" data-slide-to="2">-->
+<!--            <img class="d-block w-100 img-fluid"-->
+<!--                 src="assets/images/belle-moda%20rays.gif"-->
+<!--                 alt="Third thumbnail"></li>-->
+<!--        <li data-target="#carousel-thumb" data-slide-to="3">-->
+<!--            <img class="d-block w-100 img-fluid"-->
+<!--                 src="assets/images/belle-moda%20clouds.gif"-->
+<!--                 alt="Fourth thumbnail"></li>-->
+<!--    </ol>-->
+<!--    &lt;!&ndash;            / Thumbnails&ndash;&gt;-->
+<!--</div>-->
+<!--&lt;!&ndash;        / Carousel Wrapper&ndash;&gt;-->
+
+<!--    Contact Section-->
+<div id="contact">
+    <section class="container my-5">
+        <div class="row my-5 justify-content-center"><h1>Contact me</h1></div>
+        <div class="row">
+            <div id="form-div" class="col-sm-4 m-5">
+                <form id="form-contact">
+                    <div class="form-group">
+                        <label for="name"></label>
+                        <input type="text" class="form-control" id="name" placeholder="name">
+                    </div>
+                    <div class="form-group">
+                        <!--suppress HtmlFormInputWithoutLabel -->
+                        <input type="email" class="form-control" id="email" placeholder="email">
+                    </div>
+                    <div class="form-group">
+                        <!--suppress HtmlFormInputWithoutLabel -->
+                        <textarea class="form-control" id="message" cols="30" rows="10"
+                                  placeholder="message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-warning">Submit</button>
+                </form>
+            </div>
+            <div class="col m-5 map-wrapper">
+                <div id='map'></div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="side-footer openers">
+    <a href="https://github.com/luckyguy73" target="_blank" title="Github Profile"><i
+            class="fab fa-github-square fa-2x"></i></a>
+    <a href="https://www.linkedin.com/in/ian-de-bie-wgu/" target="_blank" title="LinkedIn Profile"><i
+            class="fab fa-linkedin fa-2x"></i></a>
+    <a href="mailto:ian@debie.us" target="_blank" title="Email Me"><i class="fas fa-envelope-square fa-2x"></i></a>
+    <a href="assets/images/resume.pdf" target="_blank" title="Resume"><i class="fas fa-file-alt fa-2x"></i></a>
+</div>
+
+<script src="https://kit.fontawesome.com/2de9b54015.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
         crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+<script src="assets/js/index.js"></script>
 
 <!--    hide accessToken while developing since you only get set amount of api calls per day-->
-<!--    <script src="assets/js/map.js"></script>-->
+    <script src="assets/js/map.js"></script>
 
 <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+<!--suppress HtmlUnknownTarget -->
 <script src="/__/firebase/7.16.0/firebase-app.js"></script>
+<!--suppress HtmlUnknownTarget -->
 <script src="/__/firebase/7.16.0/firebase-auth.js"></script>
+<!--suppress HtmlUnknownTarget -->
 <script src="/__/firebase/7.16.0/firebase-firestore.js"></script>
+<!--suppress HtmlUnknownTarget -->
 <script src="/__/firebase/7.16.0/firebase-storage.js"></script>
+<!--suppress HtmlUnknownTarget -->
 <script src="/__/firebase/init.js"></script>
-
-<script src="assets/js/contact.js"></script>
 </body>
 </html>

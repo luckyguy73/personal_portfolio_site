@@ -1,53 +1,258 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   overflow-x: hidden;
+  padding: 0;
+}
+
+hr {
+  width: 80%;
+  border: 1px solid white;
 }
 
 body {
-  background: #272727;
+  background: #1a1c1d;
   color: #fff;
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
+}
+body .nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  left: 2rem;
+  bottom: 2rem;
+  z-index: 100;
+}
+body .nav-wrapper a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+body .nav-wrapper a:hover {
+  color: #ff652f;
+}
+body .side-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 100;
+}
+body .side-footer a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+body .side-footer a:hover {
+  color: #ff652f;
 }
 
 h1, h2, h3 {
   font-weight: 400;
 }
 
-a {
-  color: #fff;
-  text-decoration: none;
+.openers {
+  opacity: 0;
 }
 
 .home {
   position: relative;
   width: 100vw;
   height: 100vh;
+  background-image: linear-gradient(to top, rgba(10, 10, 10, 0.9), rgba(10, 10, 10, 0.7)), url("../images/watersplash.gif");
+  background-size: cover;
+}
+
+.home-wrapper {
   padding-top: 10vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   justify-content: center;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("../images/watersplash.gif") center top;
-  background-size: cover;
 }
-.home__name {
+.home-wrapper__name {
   font-size: 5rem;
-  padding-bottom: 1rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #fff;
 }
-.home__name--last {
+.home-wrapper__name--last {
   color: #ff652f;
   font-weight: 700;
 }
-.home .nav-wrapper {
-  position: absolute;
-  bottom: 1rem;
+
+.img-psalms {
+  filter: brightness(20%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+}
+
+.img-lakers {
+  filter: brightness(20%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+  opacity: 0;
+}
+
+#bio {
+  margin-top: 50vh;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.about {
+  margin: 3rem auto;
+}
+
+.dodgers {
+  margin: auto;
+  text-align: center;
+}
+
+.bio-text {
+  margin: 2rem 15%;
+  line-height: 1.5rem;
+  padding: 2rem;
+  border: 3px solid #fff;
+  overflow: auto;
+  background: #03a9f4;
+  border-radius: 10px;
+}
+
+.img-dodger {
+  border: 5px solid white;
+  border-radius: 50%;
+  max-width: 60%;
+  height: auto;
+}
+
+#projects {
+  background: #222222;
+  height: 101vh;
+}
+#projects h3 {
+  margin: auto;
+}
+
+#contact {
+  margin-top: 50vh;
+  background: #222222;
+  height: 101vh;
+}
+
+#map {
+  color: black;
+  width: 500px;
+  height: 400px;
+}
+
+#message-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  border-radius: 10px;
+  height: 5vh;
+  padding: 6px 15px;
+}
+
+#form-div.submitted {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 48px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about {
+    margin: 50px auto auto;
+    padding: 0;
+  }
+
+  .dodgers {
+    margin: 20px auto auto;
+    padding: 0;
+  }
+
+  .bio-text {
+    margin: 2rem;
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+
+  body .nav-wrapper {
+    left: 0;
+    bottom: 1rem;
+  }
+
+  body .side-footer {
+    right: 0;
+    bottom: 1rem;
+  }
+
+  a .fa-2x {
+    font-size: 1em;
+    padding-top: 1rem;
+  }
+
+  #map {
+    width: 400px;
+  }
+
+  #projects, #contact {
+    height: auto;
+  }
+}
+.fade {
+  background: #222222;
+}
+
+#gallery img, #gallery2 img {
+  height: 33vw;
+  cursor: pointer;
+}
+@media (min-width: 576px) {
+  #gallery img, #gallery2 img {
+    height: 35vw;
+  }
+}
+@media (min-width: 992px) {
+  #gallery img, #gallery2 img {
+    height: 17vw;
+  }
+}
+
+.modal-dialog {
+  max-width: 90vw;
+}
+.modal-dialog .modal-content {
+  text-align: center;
+}
+.modal-dialog .modal-content .modal-header, .modal-dialog .modal-content .modal-body, .modal-dialog .modal-content .modal-footer {
+  background: #545454;
+  border-color: #222222;
+}
+
+.carousel-item img {
+  max-height: 40vw;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=main.css.map */
