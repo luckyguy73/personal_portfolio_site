@@ -44,28 +44,29 @@ $(function () {
     form.addEventListener('submit', event => {
         event.preventDefault();
 
-        firebase.auth().signInAnonymously().catch(function (error) {
-            console.log(error.code + ': ' + error.message);
-        });
-
         const firestore = firebase.firestore();
 
         const name = document.querySelector('#name').value;
         const email = document.querySelector('#email').value;
         const message = document.querySelector('#message').value;
 
-        firestore.collection('messages').add({
-            name: name,
-            email: email,
-            message: message,
-            timestamp: firebase.firestore.FieldValue.serverTimestamp()
-        }).then(function (docRef) {
-            console.log("Document written with ID: ", docRef.id);
+        firebase.auth().signInAnonymously().then(function (userRef) {
+            console.log('user: ' + userRef.user);
+            console.log('user credential: ' + userRef.credential);
+            firestore.collection('messages').add({
+                name: name,
+                email: email,
+                message: message,
+                timestamp: firebase.firestore.FieldValue.serverTimestamp()
+            }).then(function (docRef) {
+                console.log("Document written with ID: ", docRef.id);
+                console.log("saving message to Cloud Firestore");
+            }).catch(function (error) {
+                console.error('Error writing new message to database', error);
+            });
         }).catch(function (error) {
-            console.error('Error writing new message to database', error);
+            console.log(error.code + ': ' + error.message);
         });
-
-        console.log("saving message to Cloud Firestore");
 
         div.innerHTML = `<div id="message-div"><p>Message has been sent!</p></div>`;
         div.classList.add('submitted');
