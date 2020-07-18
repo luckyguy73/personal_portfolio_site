@@ -128,7 +128,7 @@ h1, h2, h3 {
 .bio-text {
   margin: 2rem 15%;
   line-height: 1.5rem;
-  padding: 2rem;
+  padding: 1rem 2rem;
   border: 3px solid #fff;
   overflow: auto;
   background: #03a9f4;
@@ -144,7 +144,6 @@ h1, h2, h3 {
 
 #projects {
   background: rgba(34, 34, 34, 1);
-  height: 101vh;
 
   h3 {
     margin: auto;
@@ -153,7 +152,7 @@ h1, h2, h3 {
 
 #contact {
   margin-top: 50vh;
-  background: rgba(34, 34, 34, 1);
+  background: rgba(34, 34, 34, .8);
   height: 101vh;
 }
 
@@ -231,7 +230,7 @@ h1, h2, h3 {
   background: rgba(34, 34, 34, 1);
 }
 
-#gallery, #gallery2 {
+.gallery {
   img {
     height: 33vw;
     cursor: pointer;
@@ -249,6 +248,7 @@ h1, h2, h3 {
   // Crop images in the carousel
 .modal-dialog {
   max-width: 90vw;
+  margin-top: 1rem;
   .modal-content {
     text-align: center;
 

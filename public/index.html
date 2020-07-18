@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Ian De Bie</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png">
-    <link rel="manifest" href="assets/images/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/fav_icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/fav_icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/fav_icons/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/fav_icons/site.webmanifest">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
           integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js'></script>
@@ -55,7 +55,8 @@
             strengthens me." I like sports, and I have been a Lakers and Dodgers fan all my life. After
             many years of specializing in Accounting, I discovered a passion for programming and went
             back to school for my Bachelors in Computer Science. I graduated this past December, and
-            once Covid 19 passes I am looking forward to starting my new career!
+            once Covid 19 passes I am looking forward to starting my new career! Until then, keeping busy
+            solving Leetcode problems, reading Java and Python books, and coding more projects.
         </p>
     </div>
 </section>
@@ -64,24 +65,51 @@
 <section id="next-img" class="mb-5">
     <div id="projects" class="text-center mb-5">
         <h3 class="my-5">Some projects that I have worked on</h3>
-        <div class="row justify-content-center mt-5" id="gallery">
-            <div class="col-12 col-lg-4 my-3" data-toggle="modal" data-target="#exampleModal">
-                <img src="assets/images/belle-moda%20water.gif" data-target="#carouselExample"
-                     data-slide-to="0" alt="0">
+        <div class="row justify-content-center mt-5 gallery" id="gallery">
+            <div class="col-12 col-lg-4 my-3" data-toggle="modal" data-target="#modal1">
+                <img src="assets/images/projects/java_appointment_project/appointments_tn.jpg" data-target="#carousel1"
+                     data-slide-to="0" alt="0"
+                     title="School project: Appointment schedule app - built with Java | JavaFX | MySQL | SceneBuilder">
             </div>
-            <div class="col-12 col-lg-4 my-3" data-toggle="modal" data-target="#exampleModal">
-                <img src="assets/images/belle-moda%20snowflakes.gif" data-target="#carouselExample"
-                     data-slide-to="1" alt="1">
+            <div class="col-12 col-lg-4 my-3" data-toggle="modal" data-target="#modal2">
+                <img src="assets/images/projects/belle_moda_project/belle-moda_snowflakes_tn.jpg"
+                     data-target="#carousel2" data-slide-to="0" alt="0"
+                     title="Personal website built with PHP | Javascript | Laravel | PostgreSQL | Heroku">
             </div>
         </div>
-        <div class="row justify-content-center" id="gallery2">
-            <div class="col-12 col-lg-4 my-3" data-toggle="modal" data-target="#exampleModal">
-                <img src="assets/images/belle-moda%20clouds.gif" data-target="#carouselExample"
-                     data-slide-to="2" alt="2">
+        <div class="row justify-content-center gallery" id="gallery2">
+            <div class="col-12 col-lg-4 my-3" data-toggle="modal" data-target="#modal3">
+                <img src="assets/images/projects/capstone_project/dashboard_tn.png" data-target="#carousel3"
+                     data-slide-to="0" alt="0"
+                     title="School project: Prediction model built with Python | Javascript | Django | Heroku Postgres">
             </div>
-            <div class="col-12 col-lg-4 my-3" data-toggle="modal" data-target="#exampleModal">
-                <img src="assets/images/belle-moda%20rays.gif" data-target="#carouselExample"
-                     data-slide-to="3" alt="3">
+            <div class="col-12 col-lg-4 my-3" data-toggle="modal" data-target="#modal4">
+                <img src="assets/images/projects/cs50x_finance_project/finance_tn.png" data-target="#carousel4"
+                     data-slide-to="0" alt="0"
+                     title="cs50x project built with Python | Javascript | Flask | IEX Api | SQLite3">
+            </div>
+
+        </div>
+        <div class="row justify-content-center gallery" id="gallery3">
+            <div class="col-12 col-lg-4 my-3" data-toggle="modal" data-target="#modal5">
+                <img src="assets/images/projects/ravenous/main_tn.png" data-target="#carousel5"
+                     data-slide-to="0" alt="0" title="Code challenge built with React.js | Node.js | Yelp api">
+            </div>
+
+            <div class="col-12 col-lg-4 my-3" data-toggle="modal" data-target="#modal6">
+                <img src="assets/images/projects/cs50x_scratch_project/scratch_tn.png" data-target="#carousel6"
+                     data-slide-to="0" alt="0" title="cs50x project built with Scratch @Scratch.MIT.edu">
+            </div>
+        </div>
+        <div class="row justify-content-center gallery" id="gallery4">
+            <div class="col-12 col-lg-4 my-3" data-toggle="modal" data-target="#modal7">
+                <img src="assets/images/projects/bitcoin_project/main_tn.png" data-target="#carousel7"
+                     data-slide-to="0" alt="0" title="Code challenge built with Python | SQLite3 | Coinapi.io api">
+            </div>
+
+            <div class="col-12 col-lg-4 my-3" data-toggle="modal" data-target="#modal8">
+                <img src="assets/images/projects/wgu_delivery_project/main_tn.png" data-target="#carousel8"
+                     data-slide-to="0" alt="0" title="School project to create delivery simulation built with Python">
             </div>
         </div>
     </div>
@@ -89,7 +117,7 @@
 
 
 <!-- Modal markup: https://getbootstrap.com/docs/4.4/components/modal/ -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -100,30 +128,68 @@
             <div class="modal-body">
 
                 <!-- Carousel markup: https://getbootstrap.com/docs/4.4/components/carousel/ -->
-                <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                <div id="carousel1" class="carousel slide" data-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="" src="assets/images/java_appointment_project/login.jpg" alt="0">
+                            <img src="assets/images/projects/java_appointment_project/login.jpg" alt="0">
+                            <div class="mt-2 mx-auto">
+                                <span>Login screen with show password feature</span>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="" src="assets/images/java_appointment_project/appointments.jpg" alt="1">
+                            <img src="assets/images/projects/java_appointment_project/appointments.jpg" alt="1">
+                            <div class="mt-2 mx-auto">
+                                <span>Add, modify, delete, or search appointments</span>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="" src="assets/images/java_appointment_project/add_appointment.jpg" alt="2">
+                            <img src="assets/images/projects/java_appointment_project/add_appointment.jpg" alt="2">
+                            <div class="mt-2 mx-auto">
+                                <span>Dynamic drop down fields and times are based on users timezone</span>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="" src="assets/images/java_appointment_project/calendar.jpg" alt="3">
+                            <img src="assets/images/projects/java_appointment_project/calendar.jpg" alt="3">
+                            <div class="mt-2 mx-auto">
+                                <span>Custom built calendar view for any month/year</span>
+                            </div>
                         </div>
                         <div class="carousel-item">
-                            <img class=""
-                                 src="assets/images/java_appointment_project/calendar_scheduled.jpg" alt="4">
+                            <img src="assets/images/projects/java_appointment_project/calendar_scheduled.jpg" alt="4">
+                            <div class="mt-2 mx-auto">
+                                <span>Click on a day to view scheduled appointments</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/java_appointment_project/calendar_wk_view.jpg" alt="5">
+                            <div class="mt-2 mx-auto">
+                                <span>Able to view a detailed list of current week</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/java_appointment_project/customers.jpg" alt="6">
+                            <div class="mt-2 mx-auto">
+                                <span>Add, modify, delete, or search customers</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/java_appointment_project/add_customer.jpg" alt="7">
+                            <div class="mt-2 mx-auto">
+                                <span>Add customer view form as modal</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/java_appointment_project/reports.jpg" alt="8">
+                            <div class="mt-2 mx-auto">
+                                <span>Reports view has multiple preset query options to choose from</span>
+                            </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -131,7 +197,9 @@
             </div>
 
             <div class="modal-footer">
-                <span>Java appointment application built for school project</span>
+                <div class="mx-auto">
+                    <span>School project: Appointment schedule app - built with Java | JavaFX | MySQL | SceneBuilder</span>
+                </div>
                 <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
             </div>
         </div>
@@ -139,68 +207,618 @@
 </div>
 
 
-<!--&lt;!&ndash;        Carousel Wrapper&ndash;&gt;-->
-<!--<div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel"-->
-<!--     data-interval="1500">-->
+<!-- Modal markup: https://getbootstrap.com/docs/4.4/components/modal/ -->
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
 
-<!--    &lt;!&ndash;            Slides&ndash;&gt;-->
-<!--    <div class="carousel-inner" role="listbox">-->
-<!--        <div class="carousel-item active">-->
-<!--            <img class="d-block w-100"-->
-<!--                 src="assets/images/belle-moda%20water.gif"-->
-<!--                 alt="First slide">-->
-<!--        </div>-->
-<!--        <div class="carousel-item">-->
-<!--            <img class="d-block w-100"-->
-<!--                 src="assets/images/belle-moda%20snowflakes.gif"-->
-<!--                 alt="Second slide">-->
-<!--        </div>-->
-<!--        <div class="carousel-item">-->
-<!--            <img class="d-block w-100"-->
-<!--                 src="assets/images/belle-moda%20rays.gif"-->
-<!--                 alt="Third slide">-->
-<!--        </div>-->
-<!--        <div class="carousel-item">-->
-<!--            <img class="d-block w-100"-->
-<!--                 src="assets/images/belle-moda%20clouds.gif"-->
-<!--                 alt="Fourth slide">-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    &lt;!&ndash;            / Slides&ndash;&gt;-->
+                <!-- Carousel markup: https://getbootstrap.com/docs/4.4/components/carousel/ -->
+                <div id="carousel2" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/projects/belle_moda_project/belle-moda_snowflakes.gif" alt="0">
+                            <div class="mt-2 mx-auto">
+                                <span>Belle Moda is a brand I came up with when I started learning web development</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/belle_moda_project/belle-moda_rays.gif" alt="1">
+                            <div class="mt-2 mx-auto">
+                                <span>I created several projects under an online pen name Ashton Morgan</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/belle_moda_project/belle-moda_clouds.gif" alt="2">
+                            <div class="mt-2 mx-auto">
+                                <span>The homepage video background is randomly chosen from over a dozen choices</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/belle_moda_project/belle-moda_water.gif" alt="3">
+                            <div class="mt-2 mx-auto">
+                                <span>The search function opens in a new tab with Google search results</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/belle_moda_project/login.png" alt="4">
+                            <div class="mt-2 mx-auto">
+                                <span>Register with email or login using one of these OAuth2 providers</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/belle_moda_project/dashboard.png" alt="5">
+                            <div class="mt-2 mx-auto">
+                                <span>User dashboard contains many useful links, even social media accounts</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/belle_moda_project/workout_home.png" alt="6">
+                            <div class="mt-2 mx-auto">
+                                <span>Created this workout app that has timer and exercise descriptions</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/belle_moda_project/workout_started.png" alt="7">
+                            <div class="mt-2 mx-auto">
+                                <span>Workout routines are stored in Heroku Postgres database</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/belle_moda_project/task_list.png" alt="8">
+                            <div class="mt-2 mx-auto">
+                                <span>Simple task list is one of several other mini apps on dashboard</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
 
-<!--    &lt;!&ndash;            Controls&ndash;&gt;-->
-<!--    <a class="carousel-control-prev chev" href="#carousel-thumb" role="button" data-slide="prev">-->
-<!--        <span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
-<!--        <span class="sr-only">Previous</span>-->
-<!--    </a>-->
-<!--    <a class="carousel-control-next chev" href="#carousel-thumb" role="button" data-slide="next">-->
-<!--        <span class="carousel-control-next-icon" aria-hidden="true"></span>-->
-<!--        <span class="sr-only">Next</span>-->
-<!--    </a>-->
-<!--    &lt;!&ndash;            / Controls&ndash;&gt;-->
+            <div class="modal-footer">
+                <div class="mx-auto">
+                    <span>Personal website built with PHP | Javascript | Laravel | Heroku Postgres</span>
+                </div>
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
-<!--    &lt;!&ndash;            Thumbnails&ndash;&gt;-->
-<!--    <ol class="carousel-indicators">-->
-<!--        <li data-target="#carousel-thumb" data-slide-to="0" class="active">-->
-<!--            <img class="d-block w-100 img-fluid"-->
-<!--                 src="assets/images/belle-moda%20water.gif"-->
-<!--                 alt="First thumbnail"></li>-->
-<!--        <li data-target="#carousel-thumb" data-slide-to="1">-->
-<!--            <img class="d-block w-100 img-fluid"-->
-<!--                 src="assets/images/belle-moda%20snowflakes.gif"-->
-<!--                 alt="Second thumbnail"></li>-->
-<!--        <li data-target="#carousel-thumb" data-slide-to="2">-->
-<!--            <img class="d-block w-100 img-fluid"-->
-<!--                 src="assets/images/belle-moda%20rays.gif"-->
-<!--                 alt="Third thumbnail"></li>-->
-<!--        <li data-target="#carousel-thumb" data-slide-to="3">-->
-<!--            <img class="d-block w-100 img-fluid"-->
-<!--                 src="assets/images/belle-moda%20clouds.gif"-->
-<!--                 alt="Fourth thumbnail"></li>-->
-<!--    </ol>-->
-<!--    &lt;!&ndash;            / Thumbnails&ndash;&gt;-->
-<!--</div>-->
-<!--&lt;!&ndash;        / Carousel Wrapper&ndash;&gt;-->
+
+
+<!-- Modal markup: https://getbootstrap.com/docs/4.4/components/modal/ -->
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <!-- Carousel markup: https://getbootstrap.com/docs/4.4/components/carousel/ -->
+                <div id="carousel3" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/projects/capstone_project/login.png" alt="0">
+                            <div class="mt-2 mx-auto">
+                                <span>Clean login form using Django Authentication</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/capstone_project/dashboard.png" alt="1">
+                            <div class="mt-2 mx-auto">
+                                <span>This app is a GUI for running my prediction model on a Heart Disease Dataset</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/capstone_project/results.png" alt="2">
+                            <div class="mt-2 mx-auto">
+                                <span>Using a Random Forest Classifier from the python scikit-learn module</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/capstone_project/dataset.png" alt="3">
+                            <div class="mt-2 mx-auto">
+                                <span>The dataset explored, cleaned, and managed via python pandas module</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/capstone_project/heatmap.png" alt="4">
+                            <div class="mt-2 mx-auto">
+                                <span>Heatmap correlation matrix via python seaborn module</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/capstone_project/graph.png" alt="5">
+                            <div class="mt-2 mx-auto">
+                                <span>Bar graphs and scatter plots built with python matplotlib module</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/capstone_project/tree.png" alt="6">
+                            <div class="mt-2 mx-auto">
+                                <span>Random Forest Classifier model visualized as decision tree using scikit-learn</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/capstone_project/pie_chart.png" alt="7">
+                            <div class="mt-2 mx-auto">
+                                <span>Pie chart data visualization created with python matplotlib module</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/capstone_project/logout.png" alt="8">
+                            <div class="mt-2 mx-auto">
+                                <span>Logout form presented as a modal</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel3" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="mx-auto">
+                    <span>School project: Prediction model built with Python | Javascript | Django | Heroku Postgres</span>
+                </div>
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal markup: https://getbootstrap.com/docs/4.4/components/modal/ -->
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <!-- Carousel markup: https://getbootstrap.com/docs/4.4/components/carousel/ -->
+                <div id="carousel4" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/projects/cs50x_finance_project/register.png" alt="0">
+                            <div class="mt-2 mx-auto">
+                                <span>The project was to build an app to quote, buy, and sell using IEX api</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_finance_project/registered.png" alt="1">
+                            <div class="mt-2 mx-auto">
+                                <span>After you register you are logged in</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_finance_project/login.png" alt="2">
+                            <div class="mt-2 mx-auto">
+                                <span>If you logout then there is a login screen to log back in</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_finance_project/quote.png" alt="3">
+                            <div class="mt-2 mx-auto">
+                                <span>Getting quotes is a breeze, using Flask jinja2 templating for html pages</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_finance_project/quoted.png" alt="4">
+                            <div class="mt-2 mx-auto">
+                                <span>I took advantage of flash messaging in several states</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_finance_project/buy_first.png" alt="5">
+                            <div class="mt-2 mx-auto">
+                                <span>On the buy page I wanted to have a way for user to know max shares they could buy</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_finance_project/buy_two.png" alt="6">
+                            <div class="mt-2 mx-auto">
+                                <span>Used Javascript to fetch symbol price after posting symbol to endpoint after onblur event</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_finance_project/bought.png" alt="7">
+                            <div class="mt-2 mx-auto">
+                                <span>SQLite3 database stores all the data shown on the dashboard</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_finance_project/sell_dropdown.png" alt="8">
+                            <div class="mt-2 mx-auto">
+                                <span>Symbol dropdown is dynamically populated with symbols the user owns</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_finance_project/sell_two.png" alt="9">
+                            <div class="mt-2 mx-auto">
+                                <span>Added the dynamic fetch here to get how many shares available to sell</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_finance_project/sold.png" alt="10">
+                            <div class="mt-2 mx-auto">
+                                <span>HTML table used to list out the records nicely</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_finance_project/history.png" alt="11">
+                            <div class="mt-2 mx-auto">
+                                <span>Transaction history is sorted by symbol and then timestamp</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_finance_project/apology.png" alt="12">
+                            <div class="mt-2 mx-auto">
+                                <span>Error pages dynamically created using http://memegen.link memes</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel4" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel4" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="mx-auto">
+                    <span>cs50x project built with Python | Javascript | Flask | IEX Api | SQLite3</span>
+                </div>
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal markup: https://getbootstrap.com/docs/4.4/components/modal/ -->
+<div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <!-- Carousel markup: https://getbootstrap.com/docs/4.4/components/carousel/ -->
+                <div id="carousel5" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/projects/ravenous/main.png" alt="0">
+                            <div class="mt-2 mx-auto">
+                                <span>Main menu has typical Yelp search features</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/ravenous/best_match.png" alt="1">
+                            <div class="mt-2 mx-auto">
+                                <span>Filter by best match for Yelp results</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/ravenous/highest_rated.png" alt="2">
+                            <div class="mt-2 mx-auto">
+                                <span>Highest rated sorts by highest average rating</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/ravenous/most_reviewed.png" alt="3">
+                            <div class="mt-2 mx-auto">
+                                <span>Select most reviewed to sort by results with most reviews, lol</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/ravenous/distance.png" alt="4">
+                            <div class="mt-2 mx-auto">
+                                <span>Option for sorting by distance</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/ravenous/bm_results.png" alt="5">
+                            <div class="mt-2 mx-auto">
+                                <span>Scroll through all the results and even click on a link to take you to their Yelp page</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel5" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel5" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="mx-auto">
+                    <span>Code challenge built with React.js | Node.js | Yelp api</span>
+                </div>
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal markup: https://getbootstrap.com/docs/4.4/components/modal/ -->
+<div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <!-- Carousel markup: https://getbootstrap.com/docs/4.4/components/carousel/ -->
+                <div id="carousel6" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/projects/cs50x_scratch_project/sandbox.png" alt="0">
+                            <div class="mt-2 mx-auto">
+                                <span>Scratch is a visual programming language developed by MIT</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_scratch_project/scratch_one.png" alt="1">
+                            <div class="mt-2 mx-auto">
+                                <span>After learning Scratch it's easy to see why it's so popular</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_scratch_project/mortimer.gif" alt="2">
+                            <div class="mt-2 mx-auto">
+                                <span>The language has loops, events, conditionals, and more</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_scratch_project/jessica.gif" alt="3">
+                            <div class="mt-2 mx-auto">
+                                <span>Easy to use GUI for developing projects</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_scratch_project/jp.gif" alt="4">
+                            <div class="mt-2 mx-auto">
+                                <span>Animations, audio, video, and more</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_scratch_project/kelsey.gif" alt="5">
+                            <div class="mt-2 mx-auto">
+                                <span>For my project I just wanted to animate each of the characters</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/cs50x_scratch_project/kit.gif" alt="6">
+                            <div class="mt-2 mx-auto">
+                                <span>Provide each of them some unique actions after a trigger event</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel6" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel6" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="mx-auto">
+                    <span>cs50x project built with Scratch @Scratch.MIT.edu</span>
+                </div>
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal markup: https://getbootstrap.com/docs/4.4/components/modal/ -->
+<div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <!-- Carousel markup: https://getbootstrap.com/docs/4.4/components/carousel/ -->
+                <div id="carousel7" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/projects/bitcoin_project/load.png" alt="0">
+                            <div class="mt-2 mx-auto">
+                                <span>Code challenge showing ability to pull, persist, manipulate, and present data with python</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/bitcoin_project/main.png" alt="1">
+                            <div class="mt-2 mx-auto">
+                                <span>Command line interface to get real-time cryptocurrency data</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/bitcoin_project/price_menu.png" alt="2">
+                            <div class="mt-2 mx-auto">
+                                <span>User can select from the 10 day lookback window for each currency</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/bitcoin_project/bitcoin.png" alt="3">
+                            <div class="mt-2 mx-auto">
+                                <span>Program gets api key from config.json file to add to get string parameters</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/bitcoin_project/litecoin.png" alt="4">
+                            <div class="mt-2 mx-auto">
+                                <span>Data stored in sqlite3 database once retrieved via api interface</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/bitcoin_project/ethereum.png" alt="5">
+                            <div class="mt-2 mx-auto">
+                                <span>Display data for each currency with open, close, high, low etc.</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/bitcoin_project/speculation.png" alt="6">
+                            <div class="mt-2 mx-auto">
+                                <span>Algorithm to display most profit possible via buying and selling at optimum times</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel7" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel7" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="mx-auto">
+                    <span>Code challenge built with Python | SQLite3 | Coinapi.io api</span>
+                </div>
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Modal markup: https://getbootstrap.com/docs/4.4/components/modal/ -->
+<div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <!-- Carousel markup: https://getbootstrap.com/docs/4.4/components/carousel/ -->
+                <div id="carousel8" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/projects/wgu_delivery_project/load.png" alt="0">
+                            <div class="mt-2 mx-auto">
+                                <span>Create algorithm for optimum delivery distribution</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/wgu_delivery_project/main.png" alt="1">
+                            <div class="mt-2 mx-auto">
+                                <span>There are 40 packages to be delivered by 3 trucks and 2 drivers</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/wgu_delivery_project/entire_day.png" alt="2">
+                            <div class="mt-2 mx-auto">
+                                <span>Simulate an entire day and get details for each package and truck</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/wgu_delivery_project/advance.png" alt="3">
+                            <div class="mt-2 mx-auto">
+                                <span>Alternatively, advance just an hour at a time and view progress</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/wgu_delivery_project/advance2.png" alt="4">
+                            <div class="mt-2 mx-auto">
+                                <span>Used greedy algorithm to find closest location to most recent location as starting vertex</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/wgu_delivery_project/lookup.png" alt="5">
+                            <div class="mt-2 mx-auto">
+                                <span>Can lookup each package status individually</span>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/projects/wgu_delivery_project/current_status.png" alt="6">
+                            <div class="mt-2 mx-auto">
+                                <span>Overall current status option gives details for each truck and package</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carousel8" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel8" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="mx-auto">
+                    <span>School project to create delivery simulation built with Python</span>
+                </div>
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 <!--    Contact Section-->
 <div id="contact">
@@ -254,8 +872,6 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
-<script src="assets/js/index.js"></script>
-
 <!--    hide accessToken while developing since you only get set amount of api calls per day-->
     <script src="assets/js/map.js"></script>
 
@@ -270,5 +886,7 @@
 <script src="/__/firebase/7.16.0/firebase-storage.js"></script>
 <!--suppress HtmlUnknownTarget -->
 <script src="/__/firebase/init.js"></script>
+<script src="assets/js/index.js"></script>
+
 </body>
 </html>

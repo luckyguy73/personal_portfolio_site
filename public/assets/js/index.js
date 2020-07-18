@@ -16,7 +16,7 @@ $(function () {
         .from('.about', {duration: .5, x: -500, opacity: 0})
         .to('.about', {rotation: 350})
         .from('.img-dodger', {delay: 0.25, duration: .5, x: -500, opacity: 0}, '-= 0.25')
-        .to('#bio', {delay: 0.5, duration: .5, backgroundColor: "rgba(34, 34, 34, 1)"}, '-= 0');
+        .to('#bio', {delay: 0.5, duration: .5, backgroundColor: "rgba(34, 34, 34, .8)"}, '-= 0');
 
 // change background image after scrolled past bio
     gsap.to('.img-lakers', {
@@ -43,8 +43,33 @@ $(function () {
 
     form.addEventListener('submit', event => {
         event.preventDefault();
+
+        firebase.auth().signInAnonymously().catch(function (error) {
+            console.log(error.code + ': ' + error.message);
+        });
+
+        const firestore = firebase.firestore();
+
+        const name = document.querySelector('#name').value;
+        const email = document.querySelector('#email').value;
+        const message = document.querySelector('#message').value;
+
+        firestore.collection('messages').add({
+            name: name,
+            email: email,
+            message: message,
+            timestamp: firebase.firestore.FieldValue.serverTimestamp()
+        }).then(function (docRef) {
+            console.log("Document written with ID: ", docRef.id);
+        }).catch(function (error) {
+            console.error('Error writing new message to database', error);
+        });
+
+        console.log("saving message to Cloud Firestore");
+
         div.innerHTML = `<div id="message-div"><p>Message has been sent!</p></div>`;
         div.classList.add('submitted');
+
     });
 
 });
