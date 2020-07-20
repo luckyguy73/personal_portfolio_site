@@ -54,6 +54,7 @@ body .side-footer a:hover {
 
 h1, h2, h3 {
   font-weight: 400;
+  overflow: hidden;
 }
 
 .openers {
@@ -76,7 +77,7 @@ h1, h2, h3 {
   align-items: center;
   text-align: center;
   justify-content: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .home-wrapper__name {
   font-size: 5rem;
